@@ -22,7 +22,8 @@ Route::get('/test', function () {
 });
 Route::get('/login', function () {
     return view('login');
-});Route::get('/signup', function () {
+});
+Route::get('/signup', function () {
     return view('signup');
 });
 Route::get('/mycart', function () {
@@ -32,16 +33,16 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/newcategory','App\Http\Controllers\IController@newcategory');
-Route::post('/newcategory','App\Http\Controllers\IController@add_category_form');
-Route::get('/add_product','App\Http\Controllers\IController@add_product');
-Route::post('/add_product','App\Http\Controllers\IController@add_product_form');
-Route::get('/cartdisplay/{id}','App\Http\Controllers\IController@cartdisplay');
-Route::post('/cart','App\Http\Controllers\IController@cart');
-Route::get('/mycart','App\Http\Controllers\IController@mycart');
-Route::get('/home','App\Http\Controllers\IController@home');
-Route::get('/all_products','App\Http\Controllers\IController@all_product');
-Route::get('/findid/{id}','App\Http\Controllers\IController@findid');
-Route::post('/login','App\Http\Controllers\IController@login');
-Route::post('/signup','App\Http\Controllers\IController@signup');
-Route::post('searchcat','App\Http\Controllers\IController@searchcat');
+Route::get('/newcategory', 'App\Http\Controllers\IController@newcategory');
+Route::post('/newcategory', 'App\Http\Controllers\IController@add_category_form');
+Route::get('/add_product', 'App\Http\Controllers\IController@add_product');
+Route::post('/add_product', 'App\Http\Controllers\IController@add_product_form');
+Route::get('/cartdisplay/{id}', 'App\Http\Controllers\IController@cartdisplay');
+Route::post('/cart', 'App\Http\Controllers\IController@cart');
+Route::get('/mycart', 'App\Http\Controllers\IController@mycart');
+Route::get('/home', 'App\Http\Controllers\IController@home');
+Route::get('/all_products', 'App\Http\Controllers\IController@all_product');
+Route::get('/findid/{id}', 'App\Http\Controllers\IController@findid');
+Route::post('/login', 'App\Http\Controllers\IController@login');
+Route::post('/signup', 'App\Http\Controllers\IController@signup');
+Route::post('searchcat', 'App\Http\Controllers\IController@searchcat' );
